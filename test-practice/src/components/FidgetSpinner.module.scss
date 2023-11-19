@@ -1,0 +1,22 @@
+.spinner {
+  @apply inline-block rounded-full border-4 border-solid border-r-transparent align-[-0.125em] motion-reduce:animate-spin_1.5s_linear_infinite;
+}
+
+.hiddenText {
+  @apply !absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 !not([clip:rect(0,0,0,0)]);
+}
+
+// Define sizes dynamically
+@for $i from 1 through 10 {
+  .size-#{$i} {
+    width: #{$i}rem;
+    height: #{$i}rem;
+  }
+}
+
+// Define colors dynamically
+@each $color in blue, red, green {
+  .border-#{$color} {
+    border-color: $color;
+  }
+}
