@@ -1,5 +1,11 @@
+import Home from "./Home";
+
 function Contact() {
-  return <div>Contact</div>;
+  return (
+    <Home>
+      <div>Contact</div>
+    </Home>
+  );
 }
 
 export default Contact;

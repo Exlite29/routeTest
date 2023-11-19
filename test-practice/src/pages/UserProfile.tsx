@@ -14,7 +14,7 @@ const PATHS = [
   },
   {
     path: "testing",
-    label: "testing",
+    label: "Testing",
   },
 ];
 const UserProfile = () => {
@@ -26,8 +26,8 @@ const UserProfile = () => {
   };
 
   return (
-    <div>
-      <h1 className="flex top">UserProfile</h1>
+    <div className="flex top-0">
+      <h1>UserProfile</h1>
 
       {PATHS.map(({ path, label }, i) => (
         <button
@@ -44,7 +44,7 @@ const UserProfile = () => {
       <Routes>
         <Route path="account" element={<Account />} />
         <Route path="settings" element={<Settings />} />
-        <Route path="testings" element={<Testing />} />
+        <Route path="testing" element={<Testing />} />
       </Routes>
     </div>
   );
